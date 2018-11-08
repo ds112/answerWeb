@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font: 16px sans-serif, Arial;
+}
+
+#div_dn{
+    width: 500px;
+    height: 200px;
+    background-image: url(image/login.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin: 150px auto;
+    padding-top: 150px;
+    border: #fb0307 dotted 2px;
+    border-radius: 15px;
+    box-shadow: 15px 10px 15px #f7c5c5;
+}
+
+.textbox{
+    background-color: rgba(250, 0, 0, 0.2);
+    padding: 2px 5px;
+    border: #FC080C dotted 1px;
+    border-radius: 15px;
+}
+
+.button,.submit,.reset{
+    background-image: linear-gradient(60deg,#FD0307,#A71416,#FC0307);
+    color:white;
+    padding: 2px 5px;
+    border-radius: 15px;
+}
+
+#cauchao{
+    color: red;
+}
