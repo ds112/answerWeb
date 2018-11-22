@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phiếu đăng ký chương trinh khuyến mãi</title>
+<style>
+.tab1{
+    border-radius: 15px;
+}
+td{
+    border: 0;
+}
+.td1{
+    text-align: right;
+}
+body{
+    color:rgb(43, 40, 255);
+
+}
+input{
+    border-radius: 7px;
+}
+textarea{
+    border-radius: 7px;
+}
+table{
+    background-image: url("hinh/khuyen-mai.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+</style>
+</head>
+<body>
+    <h1 align="center" style="color:rgb(14, 90, 255);">Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+<form>
+    <table class="tab1" width="600px;" height="600px;" border="1" align="center" cellspacing="5" style="background-color:#CCFFFF;">
+        <tr>
+            <td class="td1" width="180px;">
+                Họ tên:
+            </td>
+            <td width="350px;">
+                <input height="500px" type="text" name="hoten" maxlength="50" value="nguyen van a">
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                Địa chỉ:
+            </td>
+            <td>
+               <textarea rows="5" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                Điện thoại:
+            </td>
+            <td>
+                <input type="text" name="dienthoai" maxlength="50">
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                Giới tính:
+            </td>
+            <td>
+                <input type="radio" name="gioitinh" checked="checked">Nam<input type="radio"  name="gioitinh">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                Nghề nghiệp:
+            </td>
+            <td>
+                <select style="width:100px;">
+                    <option value="1" selected="selected">Bác sĩ</option>
+                    <option value="2">Kỹ sư</option>
+                    <option value="3">Giáo viên</option>
+                    <option value="4">Khác</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+               Chọn sản phẩm tham gia:
+            </td>
+            <td>
+                <select size="4" multiple="multiple" style="width:200px;">
+                    <option value="1" selected="selected">Kem đánh răng</option>
+                    <option value="2">Bột giặt</option>
+                    <option value="3">Dầu gội đầu</option>
+                    <option value="4">Sữa tắm</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                Số người dự đoán tham gia:
+            </td>
+            <td>
+                <input maxlength="20" size="15" type="text" name="songuoithamgia">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input style="background-color:rgb(151, 151, 240); font-size:15px;" type="button" name="dongy" value="Đồng Ý" onclick="thongbao.innerHTML='<b>Bạn đã đăng ký thành công</b>'"> 
+            </td>
+        </tr>
+        <tr>
+                <td colspan="2" align="center">
+                        <label id="thongbao" ></label>
+                    </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

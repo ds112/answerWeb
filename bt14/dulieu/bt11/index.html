@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function chao() {
+            var gotId=document.getElementById('txtuser').value;
+            cauchao.innerHTML='Chào bạn '+ gotId;
+        }
+    </script>
+    <title>Font Đăng nhập</title>
+</head>
+<body>
+<div id="div_dn">
+    <h1 align="center" style="color: red;">From Đăng Nhập</h1>
+    <form>
+        <table width="500px" border="0" cellspacing="5" align="center">
+            <tr>
+                <td width="150px" align="right">Tên người dùng: </td>
+                <td width="350px">
+                    <input name="txtuser" type="text" id="txtuser" autofocus required class="textbox" size="20" maxlength="25">
+                </td>
+            </tr>
+            <tr>
+                <td width="150px" align="right">Mật khẩu: </td>
+                <td width="350px">
+                    <input name="txtpass" type="password" id="txtpass" autofocus required class="textbox" size="15" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" id="button" class="button" onclick="chao()" value="In câu chào">
+                    <input type="submit" id="submit" class="submit" value="Gửi thông tin">
+                    <input type="reset" id="reset" class="reset" value="Làm lại">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" ><p id="cauchao"></p></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
